@@ -7,7 +7,7 @@
 
 from __future__ import division, print_function
 
-import argparse, sys
+import argparse, os.path, sys
 import itertools
 import re
 import csv
