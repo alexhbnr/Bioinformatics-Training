@@ -88,7 +88,7 @@ def callVariants(cmpH5, contigVariants, referenceFasta, radius):
         contigName = contigName.strip("\"")
         with FastaReader(referenceFasta) as fr:
             for contig in fr:
-                if contig.name == contigName:
+                if contig.id == contigName:
                     refSeq = contig.sequence
                     try:
                         refInfo = cmpH5.referenceInfo(contigName)
